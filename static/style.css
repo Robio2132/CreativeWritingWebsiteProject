@@ -1,0 +1,84 @@
+/* ===== Base ===== */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7fb;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 85%;
+  max-width: 700px;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Controls ===== */
+.controls {
+  margin-bottom: 20px;
+}
+
+select, button {
+  margin: 0 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+button {
+  background-color: #7b5cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6848e3;
+}
+
+/* ===== Prompt Text ===== */
+#prompt {
+  margin: 20px auto;
+  font-size: 1.3rem;
+  color: #222;
+  font-weight: 600;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+/* ===== Writing Box ===== */
+#writingArea {
+  width: 100%;
+  min-height: 150px;
+  font-size: 1rem;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  font-family: Georgia, serif;
+}
+
+#writingArea:focus {
+  border-color: #7b5cff;
+  outline: none;
+}
+
+/* ===== Word Count ===== */
+#wordCount {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+}

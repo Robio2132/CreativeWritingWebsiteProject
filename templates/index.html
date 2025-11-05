@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Writing Exercise</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="general">General</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="suspense">Suspense</option>
+        <option value="romance">Romance</option>
+        <option value="sci-fi">Sci-Fi</option>
+      </select>
+
+      <label for="tone">Tone:</label>
+      <select id="tone">
+        <option value="neutral">Neutral</option>
+        <option value="dark">Dark</option>
+        <option value="optimistic">Optimistic</option>
+        <option value="whimsical">Whimsical</option>
+      </select>
+
+      <button id="newPromptBtn">New Prompt</button>
+    </div>
+
+    <h2 id="prompt">Loading prompt...</h2>
+
+    <textarea id="writingArea" placeholder="Start writing your story here..."></textarea>
+    <p id="wordCount">Words: 0</p>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
